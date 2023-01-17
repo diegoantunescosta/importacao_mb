@@ -1,4 +1,0 @@
-python-csv
-pandas
-requests
-
