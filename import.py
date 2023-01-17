@@ -4,9 +4,7 @@ import requests
 import time
 import pandas as pd
 
-!pip install python-csv
-!pip install pandas
-!pip install requests
+
 
 API_ENDPOINT = "https://member.mailingboss.com/integration/index.php/lists/subscribers/create/110895:d9db4a4176ee8a69750ba441cfe97a5d"
 LIST_UID = '62e7d1065030b'
