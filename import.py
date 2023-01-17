@@ -6,7 +6,7 @@ import pandas as pd
 
 API_ENDPOINT = "https://member.mailingboss.com/integration/index.php/lists/subscribers/create/110895:d9db4a4176ee8a69750ba441cfe97a5d"
 LIST_UID = '62e7d1065030b'
-PATH = 'import.csv'
+PATH = 'importacao_email (1).csv'
 results = pd.read_csv(PATH)
 ROWS = len(results) + 1
 now = datetime.now()
