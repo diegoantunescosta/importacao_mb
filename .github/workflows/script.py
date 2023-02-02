@@ -31,7 +31,7 @@ for i in range(1, 50000):
         #    'name': name,
         'status': status
     }
-    time.sleep(1)
+    time.sleep(5)
     r = requests.post(url=API_ENDPOINT, data=data)
     pastebin_url = r.text
     print(email)
