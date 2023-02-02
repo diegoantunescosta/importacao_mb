@@ -3,7 +3,7 @@ from datetime import datetime
 import requests
 import time
 import pandas as pd
-!pip install pandas
+
 
 
 
