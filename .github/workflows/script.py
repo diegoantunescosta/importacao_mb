@@ -6,7 +6,7 @@ import csv
 
 API_ENDPOINT = "https://member.mailingboss.com/integration/index.php/lists/subscribers/create/110895:d9db4a4176ee8a69750ba441cfe97a5d"
 LIST_UID = '62e7d1065030b'
-PATH = 'importacao.csv'
+PATH = './.github/workflows/importacao.csv'
 
 with open(PATH, 'r') as arquivo_csv:
     leitor_csv = csv.reader(arquivo_csv)
