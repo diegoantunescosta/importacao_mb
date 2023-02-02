@@ -5,7 +5,7 @@ import time
 import csv
 
 API_ENDPOINT = "https://member.mailingboss.com/integration/index.php/lists/subscribers/create/110895:d9db4a4176ee8a69750ba441cfe97a5d"
-LIST_UID = '62e7d1065030b'
+LIST_UID = '63c20cebe240f'
 PATH = 'importacao.csv'
 
 with open(PATH, 'r') as arquivo_csv:
