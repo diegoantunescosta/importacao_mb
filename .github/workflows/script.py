@@ -2,7 +2,7 @@ import csv
 from datetime import datetime
 import requests
 import time
-import pandas as pd
+import csv
 
 
 
@@ -10,7 +10,11 @@ import pandas as pd
 API_ENDPOINT = "https://member.mailingboss.com/integration/index.php/lists/subscribers/create/110895:d9db4a4176ee8a69750ba441cfe97a5d"
 LIST_UID = '62e7d1065030b'
 PATH = 'importacao.csv'
-results = pd.read_csv(PATH)
+
+with open(PATH, 'r') as arquivo_csv:
+    leitor_csv = csv.reader(arquivo_csv)
+    for results in leitor_csv:
+        print(results)
 ROWS = len(results) + 1
 now = datetime.now()
 
