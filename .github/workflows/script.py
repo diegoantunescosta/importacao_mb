@@ -20,7 +20,7 @@ def get_csv_column(filename, column):
             yield row[column]
 
 
-for i in range(7000, 45000):
+for i in range(17000, 45000):
     email = list(get_csv_column(PATH, 0))[i]
 
     # name = list(get_csv_column(PATH, 1))[i]
