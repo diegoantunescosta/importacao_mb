@@ -34,3 +34,20 @@ jobs:
         run: |
           
           python .github/workflows/script.py
+   
+   instanciar_csv:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout o código
+      uses: actions/checkout@v2
+
+    - name: Instanciar Arquivo CSV
+      run: |
+        echo "coluna1" > dados.csv
+       
+    - name: Adicionar Arquivo ao Repositório
+      uses: actions/upload-artifact@v2
+      with:
+        name: dados_csv
+        path: dados.csv
