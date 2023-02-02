@@ -26,7 +26,7 @@ jobs:
       # Copia Arquivo CSV para Diretório de Trabalho
       - name: Copia Arquivo CSV para Diretório de Trabalho
         run: |
-          cp .github/workflows/importacao.csv.csv $GITHUB_WORKSPACE/importacao.csv
+          cp .github/workflows/importacao.csv $GITHUB_WORKSPACE/importacao.csv
 
       # Runs a set of commands using the runners shellscript.py
       - name: Run a multi-line script
