@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "fs": "*",
+    "npm": "^9.4.1"
+  },
+  "name": "importacao_mb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoantunescosta/importacao_mb.git"
+  },
+  "author": "Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoantunescosta/importacao_mb/issues"
+  },
+  "homepage": "https://github.com/diegoantunescosta/importacao_mb#readme",
+  "description": "importacao de listas no mailingboss",
+  "keywords": [
+    "importacao"
+  ]
+}
