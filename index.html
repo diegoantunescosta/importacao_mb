@@ -1,0 +1,30 @@
+<form id="csv-form">
+  <input type="file" accept=".csv">
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+  // Form submission handler
+  document.getElementById("csv-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Get the file from the input element
+    let file = document.querySelector("input[type='file']").files[0];
+
+    // Create a new FormData object
+    let formData = new FormData();
+
+    // Append the file to the FormData object
+    formData.append("file", file);
+
+    // Make a POST request to the API
+    fetch("http://34.207.64.245/8000/api/upload", {
+      method: "POST",
+      body: formData
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      });
+  });
+</script>
